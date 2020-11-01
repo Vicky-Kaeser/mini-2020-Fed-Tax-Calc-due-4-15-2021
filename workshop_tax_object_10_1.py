@@ -1,11 +1,15 @@
 
+
+
 class Fed_Tax():
+
     def fed_tax_calc_separately_married(self, taxable_income):
-        
+
+    
         separately_married_2020_brakets = [0.1, 9875.0, 0.12, 40125.0, 0.22, 85525.0, 0.24, 163300.0, 0.32, 207350.0, 0.35, 311025.0, 0.37, 311026.0] 
         rate1, max_amnt1, rate2, max_amnt2, rate3, max_amnt3, rate4, max_amnt4, rate5, max_amnt5, rate6, max_amnt6, rate7, max_amnt7 = [separately_married_2020_brakets[i] for i in (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13)]
         
-        
+    
 
         
         #10% braket1
@@ -361,7 +365,8 @@ class Fed_Tax():
             #print("b7 ", braket7)
 
         return total_tax
-    
+
+  
 from datetime import datetime
 
 def calculate_dates(txdate, now):
@@ -379,7 +384,7 @@ c = calculate_dates(taxday, now)+ 1
 
 tax = Fed_Tax()
 print("1 =single, 2 = married, 3 = head of household, 4 = married filling seperately")
-status = input("What is your taxable status? ")
+status = input("What is your taxable status? Select a number and hit enter. ")
 taxable_income = input("What is your taxable income? ")
 
 if status == "2":
@@ -402,6 +407,40 @@ else:
 
 
 print("There are {} days before tax day, April 15, 2021.".format(c))
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+                                 
+
 
 
 
